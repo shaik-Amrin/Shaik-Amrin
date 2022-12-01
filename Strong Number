@@ -1,0 +1,31 @@
+import java.util.*;
+public class Strong
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int i=0,f=1,r=0,s=0,n1=0;
+        n1=n;
+        while(n>0)
+        {
+            r=n%10;
+            for(i=1;i<=r;i++)
+            {
+                f=f*i;
+            }
+            n=n/10;
+            s=s+f;
+            f=1;
+        }
+        if(s==n1)
+        {
+            System.out.println("Strong Number");
+        }
+        else
+        {
+            System.out.println("Not a Strong Number");
+        }
+    }
+}
