@@ -1,0 +1,52 @@
+import java.util.*;
+public class Fee
+{
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+    String student;
+    float tuition,bus,hostel;
+    
+    System.out.println("Enter the student type");
+    student = sc.next();
+    
+    switch (student){
+          case "MSDS":
+        System.out.print("Enter tuition fee ");
+        tuition = sc.nextFloat();
+        System.out.println("Enter bus fee");
+        bus = sc.nextFloat();
+        System.out.printf("The fees to be paid by the student is Rs.%.2f",(tuition+bus));
+        break;
+        case "MSH":
+          System.out.println("Enter tuition Fee");
+          tuition = sc.nextFloat();
+          System.out.println("Enter hostel Fee");
+          hostel = sc.nextFloat();
+          System.out.printf("The fees to be paid by the student is Rs.%.2f",(tuition+hostel));
+          break;
+        case "MGSDS":
+          System.out.println("Enter tuition Fee");
+          tuition = sc.nextFloat();
+          System.out.println("Enter bus Fee");
+          bus = sc.nextFloat();
+          tuition +=(tuition/2);
+          System.out.printf("The fees to be paid the student is Rs.%.2f",(tuition+bus));
+          break;
+        case "MGSH":
+          System.out.println("Enter tuition Fee");
+          tuition = sc.nextFloat();
+          System.out.println("Enter hostel Fee");
+          hostel = sc.nextFloat();
+          tuition += (tuition/2);
+          System.out.printf("The fees to be paid by the student is Rs.%.2f",(tuition+hostel));
+          break;
+        default :
+          System.out.println("you entered worng information");
+          break;
+        }
+    }
+}
+
+
+
