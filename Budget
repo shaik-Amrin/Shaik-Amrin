@@ -1,0 +1,31 @@
+import java.util.*;
+public class Budget
+{
+    public static void main(String args[])
+    {
+    double blast=350.34,visul=230.90,sensors=190.55,arms=125.30,legs=180.90;    
+    Scanner sc=new Scanner(System.in);
+    Float A,B,C,D,E;
+    double a,b,c,d,e,g;
+    int z=15000;
+    A=sc.nextFloat();
+    B=sc.nextFloat();
+    C=sc.nextFloat();
+    D=sc.nextFloat();
+    E=sc.nextFloat();
+    a=A*(350.34);
+    b=B*(230.90);
+    c=C*(190.55);
+    d=D*(180.90);
+    g=a+b+c+d;
+    if(g<=z)
+    {
+        System.out.println("Yes");
+    }
+    else
+    {
+        System.out.println("No");
+       }
+        
+      }
+  }    
