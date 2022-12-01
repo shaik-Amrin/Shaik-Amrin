@@ -1,0 +1,29 @@
+import java.util.*;
+public class Profit
+{
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+    float x,a,b,c,d;
+    x=sc.nextFloat();
+    int y=sc.nextInt();
+    a=x/12;
+    b=y*12;
+    c=x-b;
+    d=b-x;
+    System.out.println("Enter the price of a dozen mangoes");
+    System.out.println("Enter the price at which 1 mango is being sold");
+    if(x<b)
+    {
+        System.out.printf("profit:Rs.%.2f",Math.abs(d));
+    }
+    else if (x>b)
+    {
+        System.out.printf("Loss:Rs.%.2f ",Math.abs(d));
+    }
+    else
+    {
+        System.out.println("No profit nor loss");
+      }
+    }
+}
