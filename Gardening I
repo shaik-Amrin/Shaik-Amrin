@@ -1,0 +1,20 @@
+import java.util.*;
+public class Garden
+{
+    public static void main(String args[])
+    {
+    Scanner sc=new Scanner(System.in);
+    int a,b,c;
+    a=sc.nextInt();//5
+    b=sc.nextInt();//5
+    c=sc.nextInt();
+    if((c>=1 && c<=a) || c%a==0 || c%b==1)
+    {
+        System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("NO");
+        }
+      }
+}
