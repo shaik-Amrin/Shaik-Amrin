@@ -1,0 +1,23 @@
+import java.util.*;
+public class String9
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        String rev="";
+        int l=a.length();
+        //StringBuffer d=new StringBuffer(a);
+        for( int i =l-1; i>=0; i-- )
+        rev = rev + a.charAt(i);
+        if(a.equals(rev))
+        {
+            System.out.println("Palindrome");
+        }
+        else
+        {
+            System.out.println("Not a Palindrome");
+        }
+    }
+}
