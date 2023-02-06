@@ -1,0 +1,115 @@
+//To implement Pharmacy Management System
+import java.util.Scanner;
+class Admin
+{
+    private String name;
+    private int age;
+    private String disease;
+    Scanner sc=new Scanner(System.in);
+    //create method for userDetails
+    void patientDetails()
+    {
+        System.out.println("ENTER YOUR NAME:");
+        name=sc.nextLine();
+        System.out.println("ENTER YOUR CURRENT AGE:");
+        age=sc.nextInt();
+        System.out.println("ENTER YOUR DISEASE");
+        disease=sc.next();
+        
+    }
+    //method to display user details
+    void displayDetails()
+    {
+        System.out.println("PATIENT NAME:"+name);
+        System.out.println("PATIENT AGE:"+age);
+        System.out.println("DISEASE:"+disease);
+        if((disease=="headache")||(disease=="cough"))
+        {
+            System.out.println("paracetomal");
+        }
+        else
+        {
+            System.out.println("cheston cold");
+        }
+    }
+    void displayMedicineDetails()
+    {
+         String medicine;
+        System.out.println("ENTER MEDICINE NAME:");
+        medicine=sc.next();
+        
+    }
+    void quantity()
+    {
+      int quant;
+        System.out.println("ENTER QUANTITY OF MEDICINES:");
+        quant=sc.nextInt();
+    }
+    void payment()
+    {
+        int amt;
+        System.out.println("ENTER AMOUNT:");
+        amt=sc.nextInt();
+    }
+    boolean search(String pant)
+    {
+        if(name.equals(pant)){
+          displayDetails();
+          return true;
+        }return (false);
+    }
+}
+public class Project
+{
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("How many patients:");
+      int n=sc.nextInt();
+      Admin a[]=new Admin[n];
+      for(int i=0;i<a.length;i++)
+      {
+          a[i]=new Admin();
+          a[i].patientDetails();
+      }
+      int ch;
+      do
+      {
+          System.out.println(".....MAIN MENU.....\n1.displayDetails\n2.displayMedicineDetails\n3. quantity\n4. payment\n5.exit");
+          System.out.println("Enter Your Choice:");
+          ch=sc.nextInt();
+          switch(ch)
+          {
+              case 1:
+                  for(int i=0;i<a.length;i++)
+                  {
+                      a[i].displayDetails();
+                  }
+                  break;
+                case 2:
+                      for(int i=0;i<a.length;i++)
+                  {
+                      a[i].displayMedicineDetails();
+                      
+                  }
+                  break;
+                case 3:
+                          for(int i=0;i<a.length;i++)
+                  {
+                          a[i].quantity();
+                  }
+                 break;
+                case 4:
+                              for(int i=0;i<a.length;i++)
+                  {
+                              a[i].payment();
+                  }
+                 break;
+                case 5:
+                                  System.out.println("...STAY SAFE..BE HAPPY");
+                                  break;
+                      
+          }
+      }while(ch!=5);
+    }
+}
