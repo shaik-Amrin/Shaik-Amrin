@@ -1,0 +1,34 @@
+import java.util.*;
+public class SumDiff
+{
+    public static void main(String args[])
+    {            
+     Scanner sc=new Scanner(System.in);
+    // // sum art=new sum();
+    //  Differenc diff=new difference();
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+     int mo=a+b;
+     int k=a-b;
+     System.out.println(mo);
+     System.out.println(k);
+      }
+}/*
+class sum
+{
+    public static int sum(int a,int b)
+    {
+    
+    return sum;
+    }
+}
+class difference
+{
+    public static int diff(int a,int b)
+    {
+   
+    return diff;
+    }
+ }*/
+    
+
