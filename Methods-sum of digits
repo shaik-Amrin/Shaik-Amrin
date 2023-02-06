@@ -1,0 +1,28 @@
+import java.util.*;
+public class Sum
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        Digit d=new Digit();
+        d.summ(a);
+    }
+}
+class Digit
+{
+    public static int summ(int a)
+    {
+        int r=0,s=0;
+        while(a>0)
+        {
+            r=a%10;
+            s=s+r;
+            a=a/10;
+        }
+        System.out.println(s);
+        return 0;
+    }
+}
+        
+    
