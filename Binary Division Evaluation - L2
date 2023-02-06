@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class binary  {
+	public static void main(String[] args) {
+		String[] numbers =new String[4];
+		Scanner sc=new Scanner(System.in);
+		String result = "";
+		for(int i=0;i<4;i++)
+		{
+		    numbers[i]=sc.next();
+		}
+		for (String number : numbers) {
+			int decimal = Integer.parseInt(number, 2);
+			//System.out.println(decimal);
+			if (decimal % 5 == 0) {
+				result += number + ",";
+			}
+		}
+		
+		System.out.println(result.substring(0, result.length() - 1));
+	}
+}//Code here
