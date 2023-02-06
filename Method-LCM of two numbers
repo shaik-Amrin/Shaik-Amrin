@@ -1,0 +1,31 @@
+import java.util.*;
+public class Lcm
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        Mean m=new Mean();
+        m.prime(a,b);
+    }
+}
+class Mean
+{
+    public static int prime(int a,int b)
+    {
+        int s;
+        s=(a>b)?a:b;
+        while(true)
+        {
+            if(s%a==0&&s%b==0)
+            {
+                System.out.printf("LCM of %d and %d is %d",a,b,s);
+                break;
+            }
+            ++s;
+        }
+        return 0;
+    }
+}
