@@ -1,0 +1,30 @@
+import java.util.*;
+public class Type
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int o_c=0,e_c=0;
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(a[i]%2==1)
+            o_c++;
+            else
+            e_c++;
+            
+        }
+        if(o_c==n)
+        System.out.println("Odd");
+        else if(e_c==n)
+        System.out.println("Even");
+        else
+        System.out.println("Mixed");
+    }
+}
