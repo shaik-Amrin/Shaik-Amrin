@@ -1,0 +1,48 @@
+ class Potti
+{
+    public static void eat()
+    {
+        System.out.println("Eating");
+    }
+}
+ class puppy extends Potti
+{
+    public static void talk()
+    {
+        System.out.println("Talking");
+    }
+    public static void bark()
+    {
+        System.out.println("Barking");
+    }
+}
+ class Inherit extends puppy
+{
+    public static void bit()
+    {
+        System.out.println("Biting");
+    }
+    public static void meow()
+    {
+        System.out.println("Meow");
+    }
+
+public static void main(String[] args)
+{
+    Potti an = new Potti();
+    bark();
+    meow();
+    eat();
+    bit();
+    
+    {
+        System.out.println("Eating");
+    }
+}
+}
+
+
+        
+            
+      
+//Let us rock and roll
