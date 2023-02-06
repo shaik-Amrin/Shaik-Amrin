@@ -1,0 +1,44 @@
+import java.util.*;
+public class ProDiv
+{
+    public static void main(String args[])
+    {            
+     Scanner sc=new Scanner(System.in);
+    // //  Arthematic art=new Arthematic();
+    //  Division dive=new Division();
+    //  Modulo modu=new Modulo();
+     int a=sc.nextInt();
+     int b=sc.nextInt();
+     int mo=a%b;
+     int k=a/b;
+     int di=a*b;
+     System.out.println(di);
+     System.out.println(k);
+     System.out.println(mo);
+      }
+}/*
+class Arithimatic
+{
+    public static int mul(int a,int b)
+    {
+    
+    return mu;
+    }
+}
+class Division
+{
+    public static int div(int a,int b)
+    {
+   
+    return di;
+    }
+}
+class modulo
+{
+    public static int mov(int a,int b)
+    {
+    
+    return mo;
+    }
+ }*/
+    
