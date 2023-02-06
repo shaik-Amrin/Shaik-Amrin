@@ -1,0 +1,45 @@
+import java.util.*;
+public class Friendly
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc=new Scanner(System.in);
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        Amicable am=new Amicable();
+        am.friend(n1,n2);
+    }
+}
+class Amicable
+{
+    public static int friend(int n1,int n2)
+    {
+       int s=0,s1=0,p=0,q=0;
+        for(int i=1;i<=n1;i++)
+        {
+            if(n1%i==0)
+            {
+            s=s+i;
+            }
+          p=s/n1;
+        }
+        for(int j=1;j<=n2;j++)
+        {
+            if(n2%j==0)
+            {
+            s1=s1+j;
+            }
+          q=s1/n2;
+        }
+        if(p==q)
+        {
+            System.out.println("Friendly Pair");
+        }
+        else
+        {
+            System.out.println("Not Friendly Pair");
+        }
+        return 0;
+    }
+}
